@@ -33,30 +33,14 @@ namespace IterationStatements
         //Write a method to accept two integers as parameterss and check whether they are equal or not
         public static void TrueOrFalse(int a, int b)
         {
-            int remainder;
-            if ((a == 0 && b == 0))
+            if ((a == b))
             {
-                Console.WriteLine($"The result of {a} % {b} is undefined.");
+                Console.WriteLine($"{a} and {b} are equal.");
             }
-            else if ((b == 0))
-            {
-                Console.WriteLine($"{a} cannot be divided by {b}.");
-            }
-            else if ((b == 1))
+
+            else
             {
                 Console.WriteLine($"{a} and {b} are not equal.");
-            }
-            else
-            { 
-                remainder = a % b;
-                if (remainder == 0)
-                {
-                    Console.WriteLine($"{a} and {b} are equal.");
-                }
-                else
-                {
-                    Console.WriteLine($"{a} and {b} are not equal.");
-                }
             }
             
         }
@@ -77,10 +61,9 @@ namespace IterationStatements
                 }
                 else
                 {
-                    Console.WriteLine($"{a} is not an even number.");
+                    Console.WriteLine($"{a} is an odd number.");
                 }
             }
-
         }
 
         //Write a method to check whether a given number is positive or negative
